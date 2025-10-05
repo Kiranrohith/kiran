@@ -1,3 +1,13 @@
+body{
+  overflow-x: hidden;
+}
+header{
+  position: sticky;
+  width: 100%;
+  top:0px;
+  background-color: blanchedalmond ;
+}
+
 #nav{
   display: flex;
   align-items: baseline;
@@ -27,11 +37,20 @@ h3{
   font-weight: 800;
   color: orange;
 }
+main{
+  display: flex;
+  flex-direction: column;
+}
 #menu{
+  position: sticky;
+  top: 150px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   margin-top: 180px;
+  background-color: rgba(1,1,1,0.5 );
+  opacity: 0.3;
 }
 body,html,main{
   width: 100%;
@@ -45,44 +64,73 @@ body,html,main{
 
 .gri{
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-auto-rows: auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-auto-flow: column;
   border: black 1px solid;
 }
 .bi{
   grid-column: 1/span 1;
+  grid-row-end: span 1;
   background-color: #555555;
   border: black 1px solid;
-  width: 20ch;
   padding: 20px;
+  justify-items: center;
 }
 .bri{
   grid-column: 2/span 1;
+  grid-row-end: span 1;
   background-color: #555555;
   border: black 1px solid;
-  width: 20ch;
   padding: 20px;
+  justify-items: center;
 }
 .lni{
    grid-column: 3/span 1;
-  grid-row-start: 2;
+   grid-row-end: span 1;
    background-color: #555555;
    border: black 1px solid;
-   width: 20ch;
    padding: 20px;
- }
+  justify-items: center;
+}
 .di{
   grid-column: 4/span 1;
+  grid-row-end: span 1;
   background-color: #555555;
   border: black 1px solid;
-  width: 20ch;
   padding: 20px;
+  justify-items: center;
 }
 .mi{
   grid-column: 5/span 1;
-  grid-row:
+  grid-row-end: span 1;
   background-color: #555555;
   border: black 1px solid;
-  width: 20ch;
   padding: 20px;
+  justify-items: center;
 }
+.thd{
+  background-color: white;
+}
+.mi.thd{
+  grid-column-start: 5;
+}
+.di.thd{
+  grid-column-start: 4;
+}
+.li.thd{
+  grid-column-start: 3;
+  align-items: center;
+}
+.bri.thd{
+  grid-column-start: 2;
+}
+.bi.thd{
+  grid-column-start: 1;
+}
+#ig{
+  position: absolute;
+  top: 0%;
+  left: 40%;
+  z-index:-1;
+}
+
