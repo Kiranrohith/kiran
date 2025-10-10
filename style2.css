@@ -1,0 +1,16 @@
+h1{
+    text-align: center;
+    font-size: 2em;
+}
+#but_gp{
+    display:flex;
+    flex-direction: row;
+    gap:20px;
+    justify-content: center;
+    align-items: center;
+}
+#inc, #dec, #res{
+    width:60px;
+    height:30px;
+    
+}

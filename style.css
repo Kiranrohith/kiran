@@ -1,5 +1,6 @@
 body{
-  overflow-x: hidden;
+  background: linear-gradient(yellow, blue, red);
+  z-index: -2;
 }
 header{
   position: sticky;
@@ -30,12 +31,11 @@ header{
   gap: 10px;
 }
 h3{
-  color: #555555;
   font-weight: 900;
 }
 .it{
   font-weight: 800;
-  color: orange;
+  color: rgb(94, 54, 8);
 }
 main{
   display: flex;
@@ -49,20 +49,25 @@ main{
   align-items: center;
   justify-content: center;
   margin-top: 180px;
-  background-color: rgba(1,1,1,0.5 );
-  opacity: 0.3;
+  background-color: rgb(230, 164, 23);
+  /* opacity: 0.3; */
 }
 body,html,main{
   width: 100%;
   height: 100%;
 }
-
+#select{
+  accent-color: pink;
+  transform: scale(1.5);
+}
 .tb{
   display: grid;
   justify-content: center;
 }
 
 .gri{
+  text-transform: uppercase;
+  /*font-size: 1em; */
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-auto-flow: column;
@@ -132,5 +137,25 @@ body,html,main{
   top: 0%;
   left: 40%;
   z-index:-1;
+  transition-duration: 3s;
+  transition-property: all;
+  transition-timing-function: linear;
 }
 
+#ig:hover{
+  width: 600px;
+  transform: rotate(90deg);
+}
+
+a{
+  text-decoration: none;
+}
+a:visited{
+  color: gray;
+}
+a:link{
+  color: blue;
+}
+a:hover{
+  color:chartreuse
+}
